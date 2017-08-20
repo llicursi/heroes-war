@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ibm.bluehack.InitialActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cabecalho" />
+
+        <Button
+            android:id="@+id/duel_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botaotransparente"
+            android:drawableRight="@drawable/cartas"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:text="Encontrar Duelo"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"/>
+
+
+        <Button
+            android:id="@+id/picture_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botaotransparente"
+            android:drawableRight="@drawable/foto"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Ajudar Time"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            >
+        </Button>
+        <Button
+            android:id="@+id/ranking_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botaotransparente"
+            android:drawableRight="@drawable/trofeu"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:text="Ver Ranking"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/cognitive_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botaotransparente"
+            android:drawableRight="@drawable/coin"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:text="Power UP"
+            android:textSize="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

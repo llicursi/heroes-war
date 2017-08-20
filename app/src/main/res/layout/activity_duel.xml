@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ibm.bluehack.herowars.DuelActivity">
+
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+
+        <LinearLayout
+            android:id="@+id/i_wanna_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/power_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/attrib_margin_botton"
+                android:background="@color/colorTransparent"
+                android:paddingRight="@dimen/attrib_padding_rigth"
+                android:text="41"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/attrib_size" />
+
+            <Button
+                android:id="@+id/str_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/attrib_margin_botton"
+                android:background="@color/colorTransparent"
+                android:paddingRight="@dimen/attrib_padding_rigth"
+                android:text="11"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/attrib_size" />
+
+            <Button
+                android:id="@+id/int_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorTransparent"
+                android:paddingRight="@dimen/attrib_padding_rigth"
+                android:text="36"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/attrib_size" />
+
+
+            <Button
+                android:id="@+id/equip_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/attrib_margin_botton"
+                android:background="@color/colorTransparent"
+                android:paddingRight="@dimen/attrib_padding_rigth"
+                android:text="30"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/attrib_size" />
+
+            <Button
+                android:id="@+id/pop_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/attrib_margin_botton"
+                android:background="@color/colorTransparent"
+                android:paddingRight="@dimen/attrib_padding_rigth"
+                android:text="100"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/attrib_size" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/wonder_derrota_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="-100dp"
+        android:visibility="invisible"
+        android:background="@drawable/derrota"/>
+    <RelativeLayout
+        android:id="@+id/derrota_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="260dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/final_overlay"
+            >
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Voce perdeu"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Critério : Inteligencia"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
